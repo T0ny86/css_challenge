@@ -1,3 +1,117 @@
-/* ------------------------ */
-/* STYLES */
-/* ------------------------ */
+#root {
+  outline: 1px dotted red;
+  width: 1588px;
+  min-height: 1500px;
+  margin: 0 auto;
+}
+
+/* ==============
+1) HEADER
+================ */
+#header {
+  /* outline: 1px dotted blue; */
+  display: flex;
+  justify-content: space-between;
+}
+#header .logo {
+  /* flex-grow: 1; */
+}
+#header .navbar {
+  /* flex-grow: 2; */
+}
+#header .navbar nav {
+  /* outline: 1px dotted rgb(248, 0, 0); */
+  height: 100%;
+}
+#header .navbar ul {
+  /* outline: 1px dotted rgb(0, 0, 0); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+#header .navbar li {
+  /* outline: 1px dotted green; */
+  margin-left: 50px;
+}
+#header .navbar li:last-child {
+  /* outline: 1px dotted green; */
+  background-color: var(--clr-txt-light);
+  padding: 15px 55px;
+}
+
+/* ==============
+2) BANNERwidth: 
+================ */
+#hero-banner {
+  position: relative;
+  color: var(--clr-txt-light);
+  font-weight: 600;
+}
+#hero-banner .image {
+  outline: 1px dotted blue;
+  width: 100%;
+  background-image: url("./assets/cards.png"), url("./assets/bg.jpg");
+  height: 713px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 90px bottom, center;
+  background-size: 450px 524px, cover;
+}
+#hero-banner .content {
+  outline: 1px dotted yellow;
+  width: 730px;
+  position: absolute;
+  left: 67px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 400;
+}
+#hero-banner .content .slogan p::before {
+  position: absolute;
+  content: "";
+  border: 7px solid;
+  background-color: var(--clr-txt-light);
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  left: -24px;
+  top: 7px;
+}
+#hero-banner .content .slogan p {
+  position: relative;
+  left: 25px;
+  font-weight: 600;
+  color: var(--clr-txt-light-op);
+}
+
+#hero-banner .content .main-text p {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 73px;
+  width: 680px;
+}
+#hero-banner .content .main-text p span {
+  color: var(--clr-txt-light-em);
+}
+#hero-banner .content .sub-text p {
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--clr-txt-light-op);
+}
+#hero-banner .content .main-button a{
+    display: block;
+    background-color: var(--clr-txt-light-em);
+    width: 260px;
+    height: 53px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    padding:10px 50px ;
+}
+/* ==============
+3) 
+================ */
+
+/* ==============
+3) 
+================ */
